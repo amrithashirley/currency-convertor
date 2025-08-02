@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Currency Convertor</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Currency Convertor</h1>
+        <div class="dabba">   
+        <form>
+            <label for="amount">Amount:</label>
+            <input type="numeric" id="amount" placeholder="Enter amount" required> 
+        <div class="convert">
+            <div class="from">
+                <label for="fromCurrency">From:</label>
+                <img src="https://flagsapi.com/US/flat/64.png">
+                <select id="fromCurrency" required class="select">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+                <label for="toCurrency">To:</label>
+                <img src="https://flagsapi.com/IN/flat/64.png">
+                <select id="toCurrency" required class="select">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR" selected>INR</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+        </div>
+        <p> 1 USD is 80 INR</p>
+        <div class="btn">
+            <button id="btn">Convert</button>
+        </div>
+        
+        </form>
+        </div>  
+    </div>
     
 
 
